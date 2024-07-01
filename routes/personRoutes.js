@@ -71,7 +71,7 @@ router.delete('/:id', async (req , res) => {
             res.status(400).send({message: 'Invalid person id'});
             console.log('Invalid person id');
         }
-        res.status(200).send({message: 'Person deleted successfully'});
+        res.status(200).send({message: 'Person deleted successfully!'});
     }catch(err){
         res.status(500).send(err);
     }
