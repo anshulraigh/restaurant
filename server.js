@@ -12,10 +12,10 @@ app.get('/', (req, res) => {
 })
 
 const menuItemRoutes = require('./routes/menuItemRoutes');
-app.use('/menu',menuItemRoutes);
+app.use('/menu', menuItemRoutes);
 
 const personRoutes = require('./routes/personRoutes');
-app.use('/person',personRoutes);
+app.use('/person', personRoutes);
 
 
 const PORT = process.env.PORT || 3000;

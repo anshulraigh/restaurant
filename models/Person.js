@@ -11,25 +11,25 @@ const personSchema = new Schema({
     type: Number,
     required: true
   },
-  work:{
+  work: {
     type: String,
     enum: ['chef', 'waiter', 'manager'],
     required: true
   },
-  mobile:{
+  mobile: {
     type: String,
     required: true
   },
-  email:{
+  email: {
     type: String,
     required: true,
     unique: true
   },
-  address:{
+  address: {
     type: String,
     required: true
   },
-  salary:{
+  salary: {
     type: Number,
     required: true
   }
