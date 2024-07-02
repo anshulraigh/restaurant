@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const mongoURL = 'mongodb://localhost:27017/AnshulDB';
+const mongoURL = process.env.MONGO_URL;
+// const MONGO_URL_LOCAL = process.env.MONGO_URL_LOCAL;
 
 async function connectToDatabase() {
     try {
